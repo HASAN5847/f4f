@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Bot Paneli</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        body { background-color: #121212; color: #ffffff; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .container { background-color: #1e1e1e; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); width: 350px; text-align: center; }
+        h2 { margin-bottom: 20px; color: #fe2c55; }
+        .input-group { margin-bottom: 15px; text-align: left; }
+        label { display: block; margin-bottom: 5px; font-size: 14px; color: #b0b0b0; }
+        input { width: 100%; padding: 10px; border: 1px solid #333; background-color: #2b2b2b; color: #fff; border-radius: 6px; font-size: 14px; }
+        button { width: 100%; padding: 12px; background-color: #fe2c55; color: white; border: none; border-radius: 6px; font-size: 16px; font-weight: bold; cursor: pointer; margin-top: 10px; transition: background 0.3s; }
+        button:hover { background-color: #e02448; }
+        #status { margin-top: 15px; font-size: 14px; color: #00ffcc; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>TikTok Otomasyon</h2>
+        <div class="input-group">
+            <label>Kullanıcı Adı</label>
+            <input type="text" id="username" value="cry1245" readonly>
+        </div>
+        <div class="input-group">
+            <label>Şifre</label>
+            <input type="password" id="password" value="tqkipci123456" readonly>
+        </div>
+        <button onclick="startBot()">Botu Başlat</button>
+        <p id="status">Hazır</p>
+    </div>
+
+    <script>
+        function startBot() {
+            const statusText = document.getElementById("status");
+            statusText.innerText = "Python betiği çalıştırılmalı...";
+            alert("Otomatik takip işlemi için bilgisayarındaki bot.py dosyası çalıştırılmalıdır!");
+        }
+    </script>
+</body>
+</html>
